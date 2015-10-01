@@ -88,14 +88,14 @@
 					"t.id": "t_d.transactionId"
 				}
 			},
-            {
-              "type": "left outer",
-              "table": "asset_messages",
-              "alias": "tm",
-              "on": {
-                "t.id": "tm.transactionId"
-              }
-            }
+		  {
+			"type": "left outer",
+			"table": "asset_messages",
+			"alias": "tm",
+			"on": {
+			  "t.id": "tm.transactionId"
+			}
+		  }
 		]
 	},
 	{
@@ -185,37 +185,37 @@
 			}
 		]
 	},
-	{
-		"table": "asset_delegates",
-		"alias": "t_d",
-		"type": "table",
-		"tableFields": [
-			{
-				"name": "delegates",
-				"type": "Text"
-			},
-			{
-				"name": "transactionId",
-				"type": "String",
-				"length": 21
-			}
-		]
-	},
-    {
-      "table": "asset_messages",
-      "alias": "tm",
-      "type": "table",
-      "tableFields": [
-        {
-          "name": "message",
-          "type": "String",
-          "length": 320
-        },
-        {
-          "name": "transactionId",
-          "type": "String",
-          "length": 21
-        }
-      ]
-    }
+  {
+	"table": "asset_delegates",
+	"alias": "t_d",
+	"type": "table",
+	"tableFields": [
+	  {
+		"name": "delegates",
+		"type": "Text"
+	  },
+	  {
+		"name": "transactionId",
+		"type": "String",
+		"length": 21
+	  }
+	]
+  },
+  {
+	"table": "asset_messages",
+	"alias": "tm",
+	"type": "table",
+	"tableFields": [
+	  {
+		"name": "message",
+		"type": "String",
+		"length": 320
+	  },
+	  {
+		"name": "transactionId",
+		"type": "String",
+		"length": 21
+	  }
+	]
+  }
 ]
